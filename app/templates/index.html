@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="container text-center">
+	<h1>Sentiment Analysis App</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/predict" method="post">
+    	<input type="text" name="Enter_Comment" placeholder="Type here" >
+	<button class='btn btn-success'>Predict</button>
+
+    </form>
+
+
+
+ </div>
+
+
+</body>
+</html>
